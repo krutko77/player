@@ -1,0 +1,88 @@
+//home
+body {
+	background-color: $bodyBgColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	flex: 1 1;
+	max-width: 1280px;	
+}
+
+.page {
+	background-color: $mainBgColor;
+	padding: 29px 64px 36px;
+
+
+	&__title {
+		@include font(30px, 700, 1.2);
+		margin-bottom: 30px;
+	}
+}
+
+.content {
+	display: flex;
+	gap: 12px;
+
+	&__block {
+		background-color: $secondBgColor;
+		flex: 0 1 50%;
+		min-height: 540px;
+	}
+}
+
+.content-block {
+	padding: 23px 35px 0;
+
+	&__title {
+		@include font(14px, 500, 1.7);
+		margin-bottom: 20px;
+	}
+
+	&__description {
+		display: flex;
+	}
+
+}
+
+.description {
+	&__img-box {
+		border-radius: 4px;
+		margin-right: 22px;
+	}
+
+	&__text-box	{
+		padding-top: 10px;
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+	}
+}
+
+.text-box {
+	&__playlist-name {
+		@include font(30px, 700, 1.2);
+		margin-bottom: 12px;	
+	}
+
+	&__text {
+		@include font(16px, 400, 1.5);
+
+		span {
+			color: $secondColor;
+			@include font(16px, 500, 1.5);
+		}
+	}
+
+	&__text-small {
+		color: $secondColor;
+		@include font(14px, 400, 1.7);
+		margin-bottom: 12px;
+	}
+	
+}
