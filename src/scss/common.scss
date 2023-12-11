@@ -1,1 +1,11 @@
-// Заголовки, загальні БЕМ блоки та інше...
+body {
+	background-color: $bodyBgColor;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	flex: 1 1;
+	max-width: 1280px;	
+}
