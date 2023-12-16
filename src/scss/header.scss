@@ -5,4 +5,9 @@
 	background-color: $headerBgColor;
 	padding: 0 64px 0;
 	height: 48px;
+
+	@media (max-width: $mobile) {
+		padding-left: calc(15px + 49 * ((100vw - 320px) / (768 - 320)));
+		padding-right: calc(15px + 49 * ((100vw - 320px) / (768 - 320)));
+	}
 }
